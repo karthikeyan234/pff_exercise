@@ -17,13 +17,13 @@
 
    ```bash
    iex -S mix
-  ```
+   ```
 
 2. Subscribe to a cryptocurrency pair:
 
    ```bash
    CryptoPriceAverager.BinanceClient.subscribe(["btcusdt@ticker"])
-  ```
+   ```
 
 View the average prices in the console.
 
@@ -31,7 +31,7 @@ View the average prices in the console.
 
    ```bash
    CryptoPriceAverager.BinanceClient.subscribe(["ethusdt@ticker"])
-  ```
+   ```
 
 View the average prices for all subscribed pairs in the console.
 
@@ -39,8 +39,6 @@ View the average prices for all subscribed pairs in the console.
 
    ```bash
    CryptoPriceAverager.BinanceClient.unsubscribe(["ethusdt@ticker"])
-  ```
+   ```
 
 5. View the average prices only for the remaining subscribed pairs in the console.
-
-
