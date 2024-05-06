@@ -1,21 +1,46 @@
-# CryptoPriceAverager
+### Installation
 
-**TODO: Add description**
+1. **Clone the repository to your local machine:**
 
-## Installation
+   ```bash
+   git clone https://github.com/your-username/crypto-price-averager.git
+   ```
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `crypto_price_averager` to your list of dependencies in `mix.exs`:
+2. Navigate to the project directory:
 
-```elixir
-def deps do
-  [
-    {:crypto_price_averager, "~> 0.1.0"}
-  ]
-end
-```
+   ```bash
+   cd crypto_price_averager
+   ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/crypto_price_averager>.
+**Usage**
+1. Start the application in Interactive Elixir (iex):
+
+   ```bash
+   iex -S mix
+  ```
+
+2. Subscribe to a cryptocurrency pair:
+
+   ```bash
+   CryptoPriceAverager.BinanceClient.subscribe(["btcusdt@ticker"])
+  ```
+
+View the average prices in the console.
+
+3. Subscribe to another cryptocurrency pair:
+
+   ```bash
+   CryptoPriceAverager.BinanceClient.subscribe(["ethusdt@ticker"])
+  ```
+
+View the average prices for all subscribed pairs in the console.
+
+4. Unsubscribe from a cryptocurrency pair:
+
+   ```bash
+   CryptoPriceAverager.BinanceClient.unsubscribe(["ethusdt@ticker"])
+  ```
+
+5. View the average prices only for the remaining subscribed pairs in the console.
+
 
