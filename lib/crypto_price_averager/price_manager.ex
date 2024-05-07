@@ -18,7 +18,6 @@ defmodule CryptoPriceAverager.PriceManager do
   end
 
   def handle_call({:update, symbol, last_price, timestamp}, _from, %CryptoPriceAverager.PriceManager{} = state) do
-    IO.inspect state
     # Check if the message has already been processed
     case Map.get(state.last_processed, symbol) do
       ^timestamp ->
